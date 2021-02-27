@@ -24,92 +24,106 @@ namespace WindowsFormsApp13
         private void button1_Click(object sender, EventArgs e)
         {
             Alumno miAlumno = new Alumno();
-            String miAlumnoStr;
-
+            String miAlumnoStr, miAlumnoNotaTexto;
             miAlumno.Nombre = aluNombre.Text;
             miAlumno.Nota = Convert.ToInt32(aluNota.Text);
-            miAlumnoStr = aluNombre.Text + " " + aluNota.Text + (miAlumno.Aprobado ? " Aprobado" : " Suspenso") + "\n";
+            if (miAlumno.Nota < 5)
+            {
+                miAlumnoNotaTexto = "Suspenso";
+            }
+            else if (miAlumno.Nota < 7)
+            {
+                miAlumnoNotaTexto = "Aprobado";
+            }
+            else if (miAlumno.Nota < 9)
+            {
+                miAlumnoNotaTexto = "Notable";
+            }
+            else
+                miAlumnoNotaTexto = "Sobresaliente_v2";
+            miAlumnoStr = aluNombre.Text + " " + aluNota.Text + " " +
+            miAlumnoNotaTexto + "\n";
             listaAlumnos.AppendText(miAlumnoStr);
             misAlumnos.Agregar(miAlumno);
         }
-    }
+        //Para añadir un cambio
 
 
 
 
-    class Alumno
-    {
-        private string nombre;
-        private int nota;
-        public string Nombre
+        class Alumno
         {
-            get { return nombre; }
-            set { nombre = value; }
-        }
-        public int Nota
-        {
-            get { return nota; }
-            set
+            private string nombre;
+            private int nota;
+            public string Nombre
             {
-                if (value >= 0 && value <= 10)
-                    nota = value;
+                get { return nombre; }
+                set { nombre = value; }
             }
-        }
-        public Boolean Aprobado
-        {
-            get
+            public int Nota
             {
-                if (nota >= 5)
-                    return true;
-                else
-                    return false;
-            }
-        }
-    }
-
-    class Alumnos
-    {
-        private ArrayList listaAlumnos = new ArrayList();
-
-        // Agrega un nuevo alumno a la lista
-        //        
-        public void Agregar(Alumno alu)
-        {
-            listaAlumnos.Add(alu);
-        }
-
-        // Devuelve el alumno que está en la posición num
-        //
-        public Alumno Obtener(int num)
-        {
-            if (num >= 0 && num <= listaAlumnos.Count)
-            {
-                return ((Alumno)listaAlumnos[num]);
-            }
-            return null;
-        }
-
-        // Devuelve la nota media de los alumnos
-        //
-        public float Media
-        {
-            get
-            {
-                if (listaAlumnos.Count == 0)
-                    return 0;
-                else
+                get { return nota; }
+                set
                 {
-                    float media = 0;
-                    for (int i = 0; i < listaAlumnos.Count; i++)
-                    {
-                        media += ((Alumno)listaAlumnos[i]).Nota;
-                    }
-                    return (media / listaAlumnos.Count);
+                    if (value >= 0 && value <= 10)
+                        nota = value;
+                }
+            }
+            public Boolean Aprobado
+            {
+                get
+                {
+                    if (nota >= 5)
+                        return true;
+                    else
+                        return false;
                 }
             }
         }
+
+        class Alumnos
+        {
+            private ArrayList listaAlumnos = new ArrayList();
+
+            // Agrega un nuevo alumno a la lista
+            //        
+            public void Agregar(Alumno alu)
+            {
+                listaAlumnos.Add(alu);
+            }
+
+            // Devuelve el alumno que está en la posición num
+            //
+            public Alumno Obtener(int num)
+            {
+                if (num >= 0 && num <= listaAlumnos.Count)
+                {
+                    return ((Alumno)listaAlumnos[num]);
+                }
+                return null;
+            }
+
+            // Devuelve la nota media de los alumnos
+            //
+            public float Media
+            {
+                get
+                {
+                    if (listaAlumnos.Count == 0)
+                        return 0;
+                    else
+                    {
+                        float media = 0;
+                        for (int i = 0; i < listaAlumnos.Count; i++)
+                        {
+                            media += ((Alumno)listaAlumnos[i]).Nota;
+                        }
+                        return (media / listaAlumnos.Count);
+                    }
+                }
+            }
+        }
+
+
     }
-
-
-
 }
