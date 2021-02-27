@@ -18,3 +18,13 @@ C:\Users\usuario\Source\Repos\blanes21386\practicaTema5JRBC1DAMT\WindowsFormsApp
 C:\Users\usuario\Source\Repos\blanes21386\practicaTema5JRBC1DAMT\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.csproj.CoreCompileInputs.cache
 C:\Users\usuario\Source\Repos\blanes21386\practicaTema5JRBC1DAMT\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.exe
 C:\Users\usuario\Source\Repos\blanes21386\practicaTema5JRBC1DAMT\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.pdb
+C:\Users\usuario\Source\Repos\practicaTema5JRBC1DAMT\WindowsFormsApp13\bin\Debug\WindowsFormsApp13.exe.config
+C:\Users\usuario\Source\Repos\practicaTema5JRBC1DAMT\WindowsFormsApp13\bin\Debug\WindowsFormsApp13.exe
+C:\Users\usuario\Source\Repos\practicaTema5JRBC1DAMT\WindowsFormsApp13\bin\Debug\WindowsFormsApp13.pdb
+C:\Users\usuario\Source\Repos\practicaTema5JRBC1DAMT\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.csprojAssemblyReference.cache
+C:\Users\usuario\Source\Repos\practicaTema5JRBC1DAMT\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.Form1.resources
+C:\Users\usuario\Source\Repos\practicaTema5JRBC1DAMT\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.Properties.Resources.resources
+C:\Users\usuario\Source\Repos\practicaTema5JRBC1DAMT\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.csproj.GenerateResource.cache
+C:\Users\usuario\Source\Repos\practicaTema5JRBC1DAMT\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Source\Repos\practicaTema5JRBC1DAMT\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.exe
+C:\Users\usuario\Source\Repos\practicaTema5JRBC1DAMT\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.pdb
